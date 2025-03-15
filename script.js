@@ -28,6 +28,24 @@ document.addEventListener("DOMContentLoaded", function () {
             logoTopLeft.style.opacity = "0";
         }
     });
+    document.addEventListener("DOMContentLoaded", function () {
+    const sliderScreen = document.getElementById("slider-screen");
+    const logoTopLeft = document.querySelector(".top-left-logo");
+
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 50) {
+            sliderScreen.classList.add("hidden"); // Move slider screen up
+            logoTopLeft.style.opacity = "1"; // Show top-left logo
+        } else {
+            sliderScreen.classList.remove("hidden");
+            logoTopLeft.style.opacity = "0"; // Hide logo if scrolled back up
+        }
+    });
+
+    // Optional: Hide initially
+    logoTopLeft.style.opacity = "0";
+});
+
 
     // Optional: Hide initially
     logoTopLeft.style.opacity = "0";
