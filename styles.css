@@ -73,13 +73,13 @@ body, html {
 
 /* ✅ Move content up after slider disappears */
 .slider-screen.hidden ~ .main-content {
-    margin-top: 20px; /* Reduced to bring content closer to the top-left logo */
+    margin-top: 80px; /* Adjusted to bring content closer to the top-left logo */
 }
 
 /* Hero Section */
 .hero {
     text-align: center;
-    margin-top: 20px; /* Reduce gap */
+    margin-top: 10px; /* Reduced gap between logo and hero section */
 }
 
 .hero h2 {
@@ -106,5 +106,5 @@ body, html {
 
 /* About Section */
 .about {
-    margin-top: 40px; /* Reduce gap */
+    margin-top: 20px; /* Reduced gap between sections */
 }
