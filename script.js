@@ -17,3 +17,19 @@ window.onload = function() {
         lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Prevent negative scroll values
     });
 };
+document.addEventListener("DOMContentLoaded", function () {
+    const sliderScreen = document.getElementById("slider-screen");
+    const logoTopLeft = document.querySelector(".top-left-logo");
+
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 50) {
+            logoTopLeft.style.opacity = "1";
+        } else {
+            logoTopLeft.style.opacity = "0";
+        }
+    });
+
+    // Optional: Hide initially
+    logoTopLeft.style.opacity = "0";
+});
+
