@@ -24,6 +24,25 @@ body, html {
     transition: transform 1s ease-in-out;
     z-index: 1000;
 }
+.top-left-logo {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 100;
+}
+
+.top-left-logo .logo {
+    width: 50px; /* Adjust size */
+    height: auto;
+}
+
+.top-left-logo h1 {
+    font-size: 1.5rem;
+    color: white; /* Adjust based on theme */
+}
 
 .logo-container {
     text-align: center;
