@@ -1,3 +1,4 @@
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -80,13 +81,13 @@ h1 {
 /* ✅ Ensuring content starts after the slider */
 .main-content {
     padding: 20px;
-    margin-top: 100vh; /* Push the content down initially */
+    margin-top: 50vh; /* Reduced from 100vh to 50vh */
     transition: margin-top 1s ease-in-out;
 }
 
 /* ✅ Move content up after slider disappears */
 .slider-screen.hidden ~ .main-content {
-    margin-top: 0;
+    margin-top: 10vh; /* Ensures content is aligned properly */
 }
 
 /* Hero Section */
