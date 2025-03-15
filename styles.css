@@ -24,6 +24,11 @@ body, html {
     transition: transform 1s ease-in-out;
     z-index: 1000;
 }
+.slider-screen.hidden {
+    transform: translateY(-100%);
+    opacity: 0;
+    pointer-events: none;
+}
 .top-left-logo {
     position: fixed;
     top: 20px;
