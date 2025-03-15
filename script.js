@@ -2,9 +2,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const sliderScreen = document.getElementById("slider-screen");
     const logoTopLeft = document.querySelector(".top-left-logo");
 
-    // Ensure the top-left logo is hidden initially
-    logoTopLeft.style.opacity = "0";
-
     // Hide the slider screen on scroll down and show the top-left logo
     window.addEventListener("scroll", function () {
         if (window.scrollY > 50) {
@@ -15,4 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
             logoTopLeft.style.opacity = "0"; // Hide top-left logo
         }
     });
+
+    // Ensure the top-left logo is hidden initially
+    logoTopLeft.style.opacity = "0";
 });
