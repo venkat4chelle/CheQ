@@ -25,8 +25,8 @@ body, html {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    transition: transform 1s ease-in-out;
-    z-index: 1000;
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+    z-index: 1000; /* Ensure slider is on top */
 }
 
 /* ✅ Move slider up and hide it */
@@ -44,7 +44,7 @@ body, html {
     display: flex;
     align-items: center;
     gap: 10px;
-    z-index: 100;
+    z-index: 1001; /* Higher than slider to ensure visibility */
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
 }
@@ -73,7 +73,7 @@ body, html {
 
 /* ✅ Move content up after slider disappears */
 .slider-screen.hidden ~ .main-content {
-    margin-top: 50px; /* Adjusted to ensure visibility */
+    margin-top: 20px; /* Reduced to bring content closer to the top-left logo */
 }
 
 /* Hero Section */
