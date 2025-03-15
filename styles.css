@@ -12,7 +12,7 @@ body, html {
     overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
-/* ✅ Full-screen slider */
+/* Full-screen slider */
 .slider-screen {
     position: fixed;
     top: 0;
@@ -29,14 +29,14 @@ body, html {
     z-index: 1000; /* Ensure slider is on top */
 }
 
-/* ✅ Move slider up and hide it */
+/* Move slider up and hide it */
 .slider-screen.hidden {
     transform: translateY(-100%);
     opacity: 0;
     pointer-events: none;
 }
 
-/* ✅ Top-left logo (visible immediately after slider hides) */
+/* Top-left logo (visible immediately after slider hides) */
 .top-left-logo {
     position: fixed;
     top: 20px;
@@ -49,7 +49,7 @@ body, html {
     transition: opacity 0.5s ease-in-out;
 }
 
-/* ✅ Ensure top-left logo appears when slider is hidden */
+/* Ensure top-left logo appears when slider is hidden */
 .slider-screen.hidden + .top-left-logo {
     opacity: 1;
 }
@@ -64,16 +64,16 @@ body, html {
     color: white;
 }
 
-/* ✅ Ensuring content starts higher after the slider */
+/* Ensuring content starts higher after the slider */
 .main-content {
     padding: 20px;
     margin-top: calc(100vh - 80px); /* Reduce the distance between top-left logo and content */
     transition: margin-top 1s ease-in-out;
 }
 
-/* ✅ Move content up after slider disappears */
+/* Move content up after slider disappears */
 .slider-screen.hidden ~ .main-content {
-    margin-top: 80px; /* Adjusted to bring content closer to the top-left logo */
+    margin-top: 60px; /* Adjusted to bring content closer to the top-left logo */
 }
 
 /* Hero Section */
@@ -98,10 +98,11 @@ body, html {
     border: none;
     cursor: pointer;
     margin-top: 10px;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
 }
 
 .hero button:hover {
-    background-color: #009999;
+    background-color: #009999; /* Darker shade on hover */
 }
 
 /* About Section */
