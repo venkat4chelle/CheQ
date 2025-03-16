@@ -1,18 +1,22 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const sliderScreen = document.getElementById("slider-screen");
-    const logoTopLeft = document.querySelector(".top-left-logo");
+    const openingScreen = document.getElementById("opening-screen");
 
-    // Hide the slider screen on scroll down and show the top-left logo
-    window.addEventListener("scroll", function () {
-        if (window.scrollY > 50) {
-            sliderScreen.classList.add("hidden"); // Move slider screen up
-            logoTopLeft.style.opacity = "1"; // Show top-left logo
-        } else {
-            sliderScreen.classList.remove("hidden"); // Bring back slider
-            logoTopLeft.style.opacity = "0"; // Hide top-left logo
-        }
+    // Hide the opening screen after 2 seconds
+    setTimeout(() => {
+        openingScreen.classList.add("hidden");
+    }, 2000);
+
+    // Smooth scrolling for navigation links
+    document.querySelectorAll("nav a").forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute("href").substring(1);
+            const targetElement = document.getElementById(targetId);
+
+            window.scrollTo({
+                top: targetElement.offsetTop - 50,
+                behavior: "smooth"
+            });
+        });
     });
-
-    // Ensure the top-left logo is hidden initially
-    logoTopLeft.style.opacity = "0";
 });
