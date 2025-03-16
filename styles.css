@@ -44,15 +44,24 @@ body, html {
     pointer-events: none;
 }
 
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 500;
+}
+
 /* Top-left Logo */
 .top-left-logo {
-    position: fixed;
-    top: 20px;
-    left: 20px;
     display: flex;
     align-items: center;
     gap: 10px;
-    z-index: 100;
 }
 
 .top-left-logo img {
@@ -60,15 +69,8 @@ body, html {
 }
 
 /* Navigation */
-header {
+nav {
     display: flex;
-    justify-content: space-between;
-    padding: 15px 30px;
-    background: rgba(0, 0, 0, 0.8);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 500;
 }
 
 nav ul {
@@ -81,6 +83,11 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 1.2em;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #14d0ff;
 }
 
 /* Hero Section */
@@ -119,7 +126,7 @@ section {
     padding: 60px;
 }
 
-.about, .technology, .contact {
+.about, .technology, .contact, .products, .services {
     text-align: center;
 }
 
