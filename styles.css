@@ -1,7 +1,53 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: white;
+}
+
+/* Opening Screen Animation */
+.opening-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: opacity 1.5s ease-in-out;
+    z-index: 1000;
+}
+
+.opening-screen img {
+    width: 120px;
+}
+
+.opening-screen h1 {
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+/* Hide the opening screen */
+.opening-screen.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
 /* Header */
 header {
     display: flex;
-    justify-content: space-between; /* Separate logo and nav */
+    justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
     background: rgba(0, 0, 0, 0.8);
@@ -18,33 +64,19 @@ header {
     gap: 10px;
 }
 
-/* Adjust logo size */
 .top-left-logo img {
     width: 50px;
 }
 
-/* Ensure logo text does not overlap */
-.top-left-logo h1 {
-    font-size: 1.5em;
-    color: white;
-    margin: 0;
-}
-
-/* Navigation - Move to top-right */
+/* Navigation */
 nav {
-    margin-left: auto; /* Push nav to the right */
+    display: flex;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    gap: 25px;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li {
-    display: inline-block;
+    gap: 20px;
 }
 
 nav ul li a {
@@ -52,11 +84,50 @@ nav ul li a {
     text-decoration: none;
     font-size: 1.2em;
     transition: color 0.3s ease-in-out;
-    padding: 10px 15px;
 }
 
 nav ul li a:hover {
     color: #14d0ff;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    margin-top: 100px;
+    padding: 50px;
+}
+
+.hero h2 {
+    font-size: 3em;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.hero .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #14d0ff;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero .btn:hover {
+    background-color: #0a99cc;
+}
+
+/* Sections */
+section {
+    padding: 60px;
+}
+
+.about, .technology, .contact, .products, .services {
+    text-align: center;
 }
 
 /* Responsive */
@@ -64,17 +135,14 @@ nav ul li a:hover {
     header {
         flex-direction: column;
         align-items: center;
-        padding: 10px;
-    }
-
-    nav {
-        margin-left: 0;
-        margin-top: 10px;
     }
 
     nav ul {
         flex-direction: column;
         gap: 10px;
-        text-align: center;
+    }
+
+    .hero {
+        padding: 30px;
     }
 }
