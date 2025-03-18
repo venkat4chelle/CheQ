@@ -250,6 +250,7 @@ section h2 {
     margin-bottom: 20px;
     position: relative;
     display: inline-block;
+    border-bottom: none;
 }
 
 section h2::after {
