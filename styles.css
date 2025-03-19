@@ -212,6 +212,30 @@ nav ul li a:hover::after {
     color: var(--primary-color);
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+/* Add this to your CSS file */
+.hero-content h2 {
+  color: #fff; /* Text color - adjust as needed */
+  text-shadow: 0 0 5px #00ffff, 
+               0 0 10px #00ffff, 
+               0 0 15px #00ffff, 
+               0 0 20px #00ffff;
+  animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #00ffff, 
+                 0 0 10px #00ffff, 
+                 0 0 15px #00ffff, 
+                 0 0 20px #00ffff;
+  }
+  to {
+    text-shadow: 0 0 10px #00ffff, 
+                 0 0 20px #00ffff, 
+                 0 0 30px #00ffff, 
+                 0 0 40px #00ffff;
+  }
+}
 
 .hero p {
     font-size: 1.5em;
