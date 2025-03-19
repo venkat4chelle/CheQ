@@ -253,10 +253,329 @@ section h2 {
     border-bottom: none;
 }
 
+/* Fixed the incomplete rule and changed to a shorter underline */
 section h2::after {
     content: '';
     position: absolute;
-    width: 60%;
+    width: 40px;
     height: 3px;
     background-color: var(--primary-color);
     bottom: -10px;
+    left: 0;
+}
+
+/* Add the rest of your CSS here */
+/* Products Section */
+.products {
+    background-color: var(--bg-color);
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.product-card {
+    background: rgba(68, 68, 68, 0.2);
+    padding: 30px;
+    border-radius: 10px;
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+    border: 1px solid rgba(70, 70, 70, 0.3);
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-color: var(--primary-color);
+}
+
+.product-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+/* Services Section */
+.services {
+    background-color: rgba(20, 20, 20, 1);
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.service-item {
+    padding: 30px;
+    border-radius: 10px;
+    background: rgba(68, 68, 68, 0.2);
+    transition: all var(--transition-speed);
+    border: 1px solid rgba(70, 70, 70, 0.3);
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-color: var(--primary-color);
+}
+
+.service-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+/* About Section */
+.about {
+    background-color: var(--bg-color);
+}
+
+.about-content {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.about-content p {
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+/* Technology Section */
+.technology {
+    background-color: rgba(20, 20, 20, 1);
+}
+
+.tech-highlights {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.tech-item {
+    padding: 30px;
+    border-radius: 10px;
+    background: rgba(68, 68, 68, 0.2);
+    transition: all var(--transition-speed);
+    border: 1px solid rgba(70, 70, 70, 0.3);
+}
+
+.tech-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-color: var(--primary-color);
+}
+
+.tech-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+/* Contact Section */
+.contact {
+    background-color: var(--bg-color);
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 40px auto 0;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid var(--accent-color);
+    background-color: rgba(255, 255, 255, 0.05);
+    color: var(--text-color);
+    font-size: 1rem;
+    transition: border-color var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 5px rgba(20, 208, 255, 0.3);
+}
+
+.form-group textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.95);
+    padding: 60px 0 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-logo img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.footer-logo h3 {
+    font-size: 1.5em;
+    color: var(--primary-color);
+}
+
+.footer-links h4,
+.footer-contact h4 {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color var(--transition-speed);
+}
+
+.footer-links ul li a:hover {
+    color: var(--primary-color);
+}
+
+.footer-contact p {
+    margin-bottom: 10px;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid var(--accent-color);
+    font-size: 0.9em;
+    color: #aaa;
+}
+
+/* Media Queries */
+@media (max-width: 992px) {
+    .hero h2 {
+        font-size: 2.8em;
+    }
+    
+    .hero p {
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 15px 20px;
+    }
+    
+    .top-left-logo h1 {
+        font-size: 1.5em;
+    }
+    
+    .menu-toggle {
+        display: block;
+    }
+    
+    nav ul {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 250px;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.95);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: right 0.3s ease;
+        padding: 50px 0;
+        z-index: 500;
+    }
+    
+    nav ul.active {
+        right: 0;
+    }
+    
+    nav ul li {
+        margin: 15px 0;
+    }
+    
+    .hero h2 {
+        font-size: 2.2em;
+    }
+    
+    .hero p {
+        font-size: 1.1em;
+    }
+    
+    section {
+        padding: 60px 0;
+    }
+    
+    section h2 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .top-left-logo img {
+        width: 40px;
+    }
+    
+    .top-left-logo h1 {
+        font-size: 1.3em;
+    }
+    
+    .hero h2 {
+        font-size: 1.8em;
+    }
+    
+    .btn {
+        padding: 10px 25px;
+        font-size: 1em;
+    }
+    
+    .opening-screen h1 {
+        font-size: 2em;
+    }
+}
+
+/* Animations */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+.floating {
+    animation: float 3s ease-in-out infinite;
+}
