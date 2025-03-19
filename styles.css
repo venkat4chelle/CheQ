@@ -211,9 +211,6 @@ nav ul li a:hover::after {
     margin-bottom: 20px;
     color: var(--primary-color);
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-/* Add this to your CSS file */
-.hero-content h2 {
   color: #fff; /* Text color - adjust as needed */
   text-shadow: 0 0 5px #00ffff, 
                0 0 10px #00ffff, 
