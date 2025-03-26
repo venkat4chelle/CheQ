@@ -69,8 +69,8 @@ body, html {
 .opening-screen h1 {
     font-size: 2.5em;
     margin-top: 15px;
-    color: #001f3f; /* Very dark blue */
-    text-shadow: 0 0 10px rgba(20, 100, 255, 0.6);
+    color: cyan;
+text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
 }
 
 /* Hide the opening screen */
