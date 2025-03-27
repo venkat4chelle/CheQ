@@ -69,8 +69,8 @@ body, html {
 .opening-screen h1 {
     font-size: 2.5em;
     margin-top: 15px;
-    color: cyan;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    color: black;
+    text-shadow: 0 0 10px rgba(20, 208, 255, 0.5);
 }
 
 /* Hide the opening screen */
