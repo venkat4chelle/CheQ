@@ -119,7 +119,7 @@ header.scrolled {
 }
 
 .top-left-logo img:hover {
-    transform: rotate(10deg);
+    transform: rotate(360deg);
 }
 
 .top-left-logo h1 {
