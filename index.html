@@ -3,36 +3,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Quantum Website</title>
-    <!-- Link to CSS file -->
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="CheQc - Advancing the future of quantum computing with innovative solutions">
+    <title>CheQc - Quantum Computing</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/venkat4chelle/CheQ/styles.css">
+    <!-- Add favicon -->
+    <link rel="icon" href="https://raw.githubusercontent.com/venkat4chelle/CheQ/main/my_logo.jpg" type="image/jpeg">
 </head>
 <body>
-    <!-- Full-screen slider screen -->
-    <div id="slider-screen" class="slider-screen">
+    <!-- Animated Opening Screen -->
+    <div id="opening-screen" class="opening-screen" style="background-image: url('https://raw.githubusercontent.com/venkat4chelle/CheQ/main/Main_Background.png'); background-size: cover; background-position: center;">
         <div class="logo-container">
-            <img src="my_logo.jpg" alt="Brand Logo" class="logo">
-            <h1>CheQ</h1>
+            <img src="https://raw.githubusercontent.com/venkat4chelle/CheQ/main/my_logo.jpg" alt="CheQ Logo">
+            <h1>Into The Quantum Realm...</h1>
         </div>
     </div>
+    
+    <!-- Header (Logo + Navigation) -->
+    <header>
+        <div class="top-left-logo">
+            <img src="https://raw.githubusercontent.com/venkat4chelle/CheQ/main/my_logo.jpg" alt="CheQ Logo">
+            <h1>CheQc</h1>
+        </div>
+        <nav>
+            <button id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul id="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#technology">Technology</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Welcome to CheQc</h2>
+            <p>"Pioneering innovations in quantum computing for real-world solutions"</p>
+            <a href="#technology" class="btn">Explore</a>
+        </div>
+    </section>
+    
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2>Our Products</h2>
+            <p>Innovating Cloud-Based Quantum Solutions Today, with a Vision for Tomorrow's Quantum Hardware.</p>
+            <div class="product-grid">
+                <!-- Product cards can be added here -->
+                <div class="product-card">
+                    <h3>Quantum Processors</h3>
+                    <p>Advanced quantum processors with high coherence times, minimal errors, supported by reliable infrastructure.</p>
+                </div>
+                <div class="product-card">
+                    <h3>Cloud Computing</h3>
+                    <p>Seamless remote access to quantum computers via a secure cloud interface, powered by trusted backends.</p>
+                </div>
+                <div class="product-card">
+                    <h3>Algorithm Engineering</h3>
+                    <p>Specializing in custom algorithms that deliver efficient, challenge-specific solutions to meet unique needs and drive innovation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <p>Consulting, research, and custom quantum computing solutions.</p>
+            <div class="services-grid">
+                <!-- Service items can be added here -->
+                <div class="service-item">
+                    <h3>Quantum Business Integration</h3>
+                    <p>Delivering tailored quantum computing solutions, focusing on developing custom algorithms and seamlessly integrating them into your business operations to solve specific challenges.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Research Collaboration</h3>
+                    <p>Partner with us on pioneering quantum research projects to push the boundaries of innovation.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Business Advisory and Training</h3>
+                    <p>Offering expert guidance, skill transfer, and educational resources to help your team build a strong foundation in quantum computing, empowering them for future integration into business operations.</p>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About CheQc</h2>
+            <p>At CheQc, we’re pioneering the quantum revolution by transforming cutting-edge science into real-world solutions. Founded by quantum physics and computer science experts, we specialize in scalable quantum computing technologies that redefine what’s possible.</p>
+            <div class="about-content">
+                <p>Our mission is to bridge the gap between quantum innovation and practical business applications. By developing custom algorithms and cloud-based quantum tools, we empower industries to harness this revolutionary technology. We don’t just deliver solutions—we equip businesses with the knowledge and expertise to thrive in the quantum era.
 
-    <!-- Main content -->
-    <div class="main-content">
-        <!-- Hero section -->
-        <section class="hero">
-            <h2>Quantum Revolution</h2>
-            <p>The Beginning ... </p>
-            <button>Explore</button>
-        </section>
-
-        <!-- Additional content sections here -->
-        <section class="about">
-            <h2>Our Mission</h2>
-            <p>Hit the problem head-on ... </p>
-        </section>
-    </div>
-
-    <!-- Link to JavaScript file -->
-    <script src="script.js"></script>
+Driven by a relentless passion for pushing boundaries, we’re shaping the future of computing, one quantum leap at a time. Welcome to the next wave of innovation. Welcome to CheQc.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Technology Section -->
+    <section id="technology" class="technology">
+        <div class="container">
+            <h2>Our Technology</h2>
+            <p>Leveraging superconducting qubits, trapped ions, and quantum circuits to achieve quantum supremacy.</p>
+            <div class="tech-highlights">
+                <div class="tech-item">
+                    <h3>Superconducting Qubits</h3>
+                    <p>High-performance quantum bits operating at near absolute zero temperatures.</p>
+                </div>
+                <div class="tech-item">
+                    <h3>Quantum Error Correction</h3>
+                    <p>Advanced algorithms to mitigate quantum decoherence and improve computation accuracy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <p>Interested in working with us? Contact us to learn more.</p>
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="https://raw.githubusercontent.com/venkat4chelle/CheQ/main/my_logo.jpg" alt="CheQ Logo">
+                    <h3>CheQc</h3>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p>Email: vrc@cheqc.infy.uk</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;arjun@cheqc.infy.uk</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rishi1primero@gmail.com</p>
+                    <p>Phone: +91 898 531 9035</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+91 832 858 1461</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 CheQc Quantum Computing. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/gh/venkat4chelle/CheQ/script.js"></script>
 </body>
 </html>
